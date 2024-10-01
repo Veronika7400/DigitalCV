@@ -1,0 +1,108 @@
+h1,
+h2,
+h3 {
+  font-family: "Arial Nova Cond Light";
+}
+
+.timeline-modern {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-modern-item {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 0.25rem;
+  border-left: 3px solid transparent;
+}
+
+.timeline-modern-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-modern-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-modern-item::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 20px;
+  width: 3px;
+  height: calc(100% - 40px);
+  background-color: #333;
+  z-index: 0;
+}
+
+.timeline-content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .timeline-modern {
+    padding: 1rem;
+  }
+
+  .timeline-modern-item {
+    padding: 0.75rem;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .timeline-content h5 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+
+.btn:hover {
+  font-weight: bold;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+}

@@ -1,0 +1,55 @@
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  font-family: "Arial Nova Cond Light";
+  font-size: 1.5rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.nav-link {
+  font-family: "Arial Nova Cond Light";
+  margin: 0.5rem 0;
+  text-decoration: none;
+  position: relative;
+  font-weight: normal;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+  background-color: currentColor;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover::after {
+  font-weight: bold;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    margin: 0rem 0;
+  }
+}
