@@ -244,30 +244,32 @@ const Projects: React.FC = () => {
     <Fragment>
       {projectCategories.map((category, categoryIndex) => (
         <section className="container my-5" key={categoryIndex}>
-          <h2 className="experience-title text-center">{category.title}</h2>
-          <div className="content p-4">
+          <div className="timeline-modern mb-4 p-4">
+            <h3 className="section-title mb-4">{category.title}</h3>
             <ul className="projects-list">
               {category.projects.map((project, projectIndex) => (
-                <li key={projectIndex} className="mb-4">
-                  <h3 className="section-title">{project.name}</h3>
-                  <div className="technologies mb-1">
-                    {project.technologies.join(", ")}
-                  </div>
-                  <a
-                    href={project.link}
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                  </a>
-                  <button
-                    className="btn ms-2"
-                    onClick={() => handleDetailsClick(project)}
-                  >
-                    Details
-                  </button>
-                </li>
+                <div className="content p-4">
+                  <li key={projectIndex} className="mb-4">
+                    <h5 className="mt-2">{project.name}</h5>
+                    <div className="technologies mb-1">
+                      {project.technologies.join(", ")}
+                    </div>
+                    <a
+                      href={project.link}
+                      className="btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Access resources
+                    </a>
+                    <button
+                      className="btn ms-2"
+                      onClick={() => handleDetailsClick(project)}
+                    >
+                      Details
+                    </button>
+                  </li>
+                </div>
               ))}
             </ul>
           </div>
@@ -292,7 +294,7 @@ const Projects: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Project
+              Access resources
             </a>
           </div>
         </section>

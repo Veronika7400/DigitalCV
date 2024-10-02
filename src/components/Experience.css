@@ -15,7 +15,6 @@
   font-style: italic;
 }
 
-
 @media (max-width: 960px) {
   .timeline-content {
     flex-direction: column;

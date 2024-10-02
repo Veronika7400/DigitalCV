@@ -62,11 +62,10 @@ const Experience: React.FC = () => {
 
   return (
     <section className="container my-5">
-      <h2 className="experience-title text-center">EXPERIENCE</h2>
       <div className="timeline-modern mb-4 p-4">
-        <h3 className="section-title mb-4">Professional Experience</h3>
+        <h3 className="section-title mb-4">PROFESSIONAL EXPERIENCE</h3>
         {professionalExperience.map((exp, index) => (
-          <div key={index} className="mb-4">
+          <div key={index} className="timeline-item mb-4">
             <div className="timeline-content d-flex align-items-center">
               <div style={{ marginRight: "15px" }}>
                 <img
@@ -77,7 +76,7 @@ const Experience: React.FC = () => {
                 />
               </div>
               <div>
-                <h5 className="text-left">{exp.title}</h5>
+                <h5 className="text-left mt-2">{exp.title}</h5>
                 <i>
                   {exp.company} | {exp.period} | {exp.location}
                 </i>
@@ -89,7 +88,7 @@ const Experience: React.FC = () => {
       </div>
 
       <div className="timeline-modern mb-4 p-4">
-        <h3 className="section-title mb-4">Seasonal Work</h3>
+        <h3 className="section-title mb-4">SEASONAL WORK</h3>
         {seasonalWork.map((exp, index) => (
           <div key={index} className="mb-4">
             <div className="timeline-content d-flex align-items-center">

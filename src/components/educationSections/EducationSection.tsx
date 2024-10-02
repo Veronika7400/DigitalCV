@@ -25,7 +25,6 @@ const EducationSection: React.FC = () => {
 
   return (
     <section className="container my-5">
-      <h2 className="education-title text-center">EDUCATION</h2>
       <div className="timeline-modern">
         {educationData.map((item, index) => (
           <div key={index} className="timeline-modern-item">

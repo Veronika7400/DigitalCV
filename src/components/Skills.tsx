@@ -34,10 +34,9 @@ const Skills: React.FC = () => {
   return (
     <Fragment>
       <section className="container my-5">
-        <h2 className="experience-title text-center">DIGITAL SKILLS</h2>
-
         <div className="content mb-4 p-4">
-          <h3 className="section-title mb-4">Programming Languages</h3>
+          <h3 className="experience-title text-center">DIGITAL SKILLS</h3>
+          <h3 className="section-title-left mb-4">Programming languages</h3>
           <div className="skills-grid">
             {programmingLanguages.map((skill, index) => (
               <div key={index} className="skill-item">
@@ -51,7 +50,7 @@ const Skills: React.FC = () => {
             ))}
           </div>
 
-          <h3 className="section-title mb-4 mt-5">Platforms and Tools</h3>
+          <h3 className="section-title-left mb-4 mt-5">Platforms and tools</h3>
           <div className="tools-grid">
             {platformsAndTools.map((tool, index) => (
               <div key={index} className="tool-item">
@@ -63,16 +62,15 @@ const Skills: React.FC = () => {
       </section>
 
       <section className="container my-5">
-        <h2 className="experience-title text-center">LANGUAGE SKILLS</h2>
-
         <div className="content mb-4 p-4">
-          <h3 className="section-title ">Native Language</h3>
+          <h3 className="experience-title text-center">LANGUAGE SKILLS</h3>
+          <h3 className="section-title-left ">Native Language</h3>
           <p>Croatian</p>
           <div className="proficiency-bar">
             <div className="proficiency-level" style={{ width: "100%" }}></div>
           </div>
 
-          <h3 className="section-title mt-4">Other Languages</h3>
+          <h3 className="section-title-left mt-4">Other Languages</h3>
           <p>English</p>
           <ul className="language-list">
             <li>
