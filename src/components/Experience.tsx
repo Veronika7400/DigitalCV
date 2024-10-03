@@ -78,7 +78,7 @@ const Experience: React.FC = () => {
               <div>
                 <h5 className="text-left mt-2">{exp.title}</h5>
                 <i>
-                  {exp.company} | {exp.period} | {exp.location}
+                  {exp.company} | {exp.location} | {exp.period}
                 </i>
                 <p>{exp.description}</p>
               </div>
@@ -103,7 +103,7 @@ const Experience: React.FC = () => {
               <div>
                 <h5 className="text-left ">{exp.title}</h5>
                 <i>
-                  {exp.company} | {exp.period} | {exp.location}
+                  {exp.company} | {exp.location} | {exp.period}
                 </i>
                 <p>{exp.description}</p>
               </div>
