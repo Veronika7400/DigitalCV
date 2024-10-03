@@ -61,3 +61,26 @@
 .language-list li {
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .tools-grid,
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .proficiency-bar {
+    width: 100%;
+  }
+}
