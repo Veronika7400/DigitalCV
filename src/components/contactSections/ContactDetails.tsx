@@ -50,8 +50,11 @@ const contactDetails = [
 const ContactDetails: React.FC = () => {
   return (
     <section className="container my-5">
-      <h3 className="experience-title text-center">CONTACT INFORMATION</h3>
       <div className="timeline-modern mb-4 p-4">
+        <h3 className="experience-title text-center mb-4">
+          CONTACT INFORMATION
+        </h3>
+
         {contactDetails.map((info, index) => (
           <div key={index} className="timeline-item mb-4">
             <div className="timeline-content d-flex align-items-center">

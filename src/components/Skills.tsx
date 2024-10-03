@@ -34,73 +34,81 @@ const Skills: React.FC = () => {
   return (
     <Fragment>
       <section className="container my-5">
-        <div className="content mb-4 p-4">
-          <h3 className="experience-title text-center">DIGITAL SKILLS</h3>
-          <h3 className="section-title-left mb-4">Programming languages</h3>
-          <div className="skills-grid">
-            {programmingLanguages.map((skill, index) => (
-              <div key={index} className="skill-item">
-                <img
-                  src={skill.icon}
-                  alt={"${skill.name} Icon"}
-                  className="skill-icon"
-                />
-                <span>{skill.name}</span>
-              </div>
-            ))}
-          </div>
-
-          <h3 className="section-title-left mb-4 mt-5">Platforms and tools</h3>
-          <div className="tools-grid">
-            {platformsAndTools.map((tool, index) => (
-              <div key={index} className="tool-item">
-                <span>{tool}</span>
-              </div>
-            ))}
+        <div className="timeline-modern mb-4 p-4">
+          <h3 className="section-title mb-4">DIGITAL SKILLS</h3>
+          <div className="content p-4">
+            <h3 className="section-title-left mb-4">Programming languages</h3>
+            <div className="skills-grid">
+              {programmingLanguages.map((skill, index) => (
+                <div key={index} className="skill-item">
+                  <img
+                    src={skill.icon}
+                    alt={"${skill.name} Icon"}
+                    className="skill-icon"
+                  />
+                  <span>{skill.name}</span>
+                </div>
+              ))}
+            </div>
+            <h3 className="section-title-left mb-4 mt-5">
+              Platforms and tools
+            </h3>
+            <div className="tools-grid">
+              {platformsAndTools.map((tool, index) => (
+                <div key={index} className="tool-item">
+                  <span>{tool}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <section className="container my-5">
-        <div className="content mb-4 p-4">
+        <div className="timeline-modern mb-4 p-4">
           <h3 className="experience-title text-center">LANGUAGE SKILLS</h3>
-          <h3 className="section-title-left ">Native Language</h3>
-          <p>Croatian</p>
-          <div className="proficiency-bar">
-            <div className="proficiency-level" style={{ width: "100%" }}></div>
-          </div>
+          <div className="content mb-4 p-4">
+            <h3 className="section-title-left ">Native Language</h3>
+            <p>Croatian</p>
+            <div className="proficiency-bar">
+              <div
+                className="proficiency-level"
+                style={{ width: "100%" }}
+              ></div>
+            </div>
 
-          <h3 className="section-title-left mt-4">Other Languages</h3>
-          <p>English</p>
-          <ul className="language-list">
-            <li>
-              Understanding - C1
-              <div className="proficiency-bar">
-                <div
-                  className="proficiency-level"
-                  style={{ width: "85%" }}
-                ></div>
-              </div>
-            </li>
-            <li>
-              Speaking - B2
-              <div className="proficiency-bar">
-                <div
-                  className="proficiency-level"
-                  style={{ width: "75%" }}
-                ></div>
-              </div>
-            </li>
-            <li>
-              Writing - B2
-              <div className="proficiency-bar">
-                <div
-                  className="proficiency-level"
-                  style={{ width: "75%" }}
-                ></div>
-              </div>
-            </li>
-          </ul>
+            <h3 className="section-title-left mt-4">Other Languages</h3>
+            <p>English</p>
+            <ul className="language-list">
+              <li>
+                Understanding - C1
+                <div className="proficiency-bar">
+                  <div
+                    className="proficiency-level"
+                    style={{ width: "85%" }}
+                  ></div>
+                </div>
+              </li>
+              <li>
+                Speaking - B2
+                <div className="proficiency-bar">
+                  <div
+                    className="proficiency-level"
+                    style={{ width: "75%" }}
+                  ></div>
+                </div>
+              </li>
+              <li>
+                Writing - B2
+                <div className="proficiency-bar">
+                  <div
+                    className="proficiency-level"
+                    style={{ width: "75%" }}
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </Fragment>

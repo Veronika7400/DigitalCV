@@ -21,8 +21,9 @@ const SendEmail: React.FC = () => {
 
   return (
     <section className="container my-5">
-      <h3 className="experience-title text-center">SEND ME A MESSAGE</h3>
       <div className="timeline-modern mb-4 p-4">
+        <h3 className="experience-title text-center mb-4">SEND ME A MESSAGE</h3>
+
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
