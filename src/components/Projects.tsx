@@ -248,8 +248,8 @@ const Projects: React.FC = () => {
             <h3 className="section-title mb-4">{category.title}</h3>
             <ul className="projects-list">
               {category.projects.map((project, projectIndex) => (
-                <div className="content p-4">
-                  <li key={projectIndex} className="mb-4">
+                <div className="content p-4" key={projectIndex}>
+                  <li className="mb-4">
                     <h5 className="mt-2">{project.name}</h5>
                     <div className="technologies mb-1">
                       {project.technologies.join(", ")}

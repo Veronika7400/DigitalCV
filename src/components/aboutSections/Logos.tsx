@@ -12,7 +12,7 @@ const Logos: React.FC = () => {
 
   return (
     <section className="container my-5 pt-5">
-      <h2 className="text-center mb-5">Employment and collaboration</h2>
+      <h3 className="text-center mb-5">EMPLOYMENT AND COLLABORATION</h3>
       <div className="row">
         {logos.map((logo, index) => (
           <div className="col-lg-4 col-md-4 col-sm-6 mb-4" key={index}>

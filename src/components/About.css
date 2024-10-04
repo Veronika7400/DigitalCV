@@ -105,4 +105,13 @@
     text-align: center;
     padding: 20px;
   }
+  .qr-code {
+    max-width: 150px; /* Manja veličina QR koda za manje ekrane */
+  }
+}
+
+.qr-code {
+  width: 100%;
+  max-width: 200px; /* Maksimalna širina QR koda */
+  margin: 0 auto; /* Centriranje */
 }
