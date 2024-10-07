@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 import "./Skills.css";
 
 const Skills: React.FC = () => {
+  const { t } = useTranslation();
+
   const programmingLanguages = [
     { name: "Java", icon: "/images/javaIcon.png" },
     { name: "C#", icon: "/images/cSharpIcon.png" },
@@ -35,15 +38,17 @@ const Skills: React.FC = () => {
     <Fragment>
       <section className="container my-5">
         <div className="timeline-modern mb-4 p-4">
-          <h3 className="section-title mb-4">DIGITAL SKILLS</h3>
+          <h3 className="section-title mb-4">{t("skills.digitalSkills")}</h3>
           <div className="content p-4">
-            <h3 className="section-title-left mb-4">Programming languages</h3>
+            <h3 className="section-title-left mb-4">
+              {t("skills.programmingLanguages.title")}
+            </h3>
             <div className="skills-grid">
               {programmingLanguages.map((skill, index) => (
                 <div key={index} className="skill-item">
                   <img
                     src={skill.icon}
-                    alt={"${skill.name} Icon"}
+                    alt={`${skill.name} Icon`}
                     className="skill-icon"
                   />
                   <span>{skill.name}</span>
@@ -51,7 +56,7 @@ const Skills: React.FC = () => {
               ))}
             </div>
             <h3 className="section-title-left mb-4 mt-5">
-              Platforms and tools
+              {t("skills.platformsAndTools.title")}
             </h3>
             <div className="tools-grid">
               {platformsAndTools.map((tool, index) => (
@@ -66,10 +71,14 @@ const Skills: React.FC = () => {
 
       <section className="container my-5">
         <div className="timeline-modern mb-4 p-4">
-          <h3 className="experience-title text-center">LANGUAGE SKILLS</h3>
+          <h3 className="experience-title text-center">
+            {t("skills.languageSkills.title")}
+          </h3>
           <div className="content mb-4 p-4">
-            <h3 className="section-title-left ">Native Language</h3>
-            <p>Croatian</p>
+            <h3 className="section-title-left">
+              {t("skills.languageSkills.nativeLanguage.title")}
+            </h3>
+            <p>{t("skills.languageSkills.nativeLanguage.name")}</p>
             <div className="proficiency-bar">
               <div
                 className="proficiency-level"
@@ -77,11 +86,13 @@ const Skills: React.FC = () => {
               ></div>
             </div>
 
-            <h3 className="section-title-left mt-4">Other Languages</h3>
-            <p>English</p>
+            <h3 className="section-title-left mt-4">
+              {t("skills.languageSkills.otherLanguages.title")}
+            </h3>
+            <p>{t("skills.languageSkills.otherLanguages.name")}</p>
             <ul className="language-list">
               <li>
-                Understanding - C1
+                {t("skills.languageSkills.otherLanguages.understanding")} - C1
                 <div className="proficiency-bar">
                   <div
                     className="proficiency-level"
@@ -90,7 +101,7 @@ const Skills: React.FC = () => {
                 </div>
               </li>
               <li>
-                Speaking - B2
+                {t("skills.languageSkills.otherLanguages.speaking")} - B2
                 <div className="proficiency-bar">
                   <div
                     className="proficiency-level"
@@ -99,7 +110,7 @@ const Skills: React.FC = () => {
                 </div>
               </li>
               <li>
-                Writing - B2
+                {t("skills.languageSkills.otherLanguages.writing")} - B2
                 <div className="proficiency-bar">
                   <div
                     className="proficiency-level"

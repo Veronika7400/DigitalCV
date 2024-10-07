@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const LocationOnMap: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="container my-5">
       <div className="timeline-modern mb-4 p-4">
         <h3 className="experience-title text-center mb-4">
-          LOCATION ON THE MAP
+          {t("locationOnMap.title")}
         </h3>
         <div className="map-container">
           <iframe

@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
 import { QRCodeCanvas } from "qrcode.react";
+import { useTranslation } from "react-i18next";
 
 const DownloadCV: React.FC = () => {
+  const { t } = useTranslation();
+
   const cvOnline =
     "https://www.dropbox.com/scl/fi/drx9ngeoj67u5e2eumgp4/CV.pdf?rlkey=0242ko2fdrbpmy4ki7d2ro7ug&st=x5e41aua&dl=0";
   const cvDownload = "/CV.pdf";
@@ -10,7 +13,7 @@ const DownloadCV: React.FC = () => {
     <Fragment>
       <section className="container">
         <div className="timeline-modern mb-4 p-4">
-          <h2 className="education-title text-center">CV ACCESS</h2>
+          <h3 className="education-title text-center">{t("about.cv.title")}</h3>
           <div className="content text-center">
             <div className="qr-code text-center">
               <QRCodeCanvas
@@ -25,10 +28,10 @@ const DownloadCV: React.FC = () => {
             </div>
             <div>
               <a href={cvDownload} download className="btn">
-                Download CV
+                {t("about.cv.download")}
               </a>
               <a href={cvOnline} className="btn">
-                View CV
+                {t("about.cv.view")}
               </a>
             </div>
           </div>

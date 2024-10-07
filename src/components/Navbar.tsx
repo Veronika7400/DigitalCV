@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 
 interface NavigationBarProps {
@@ -10,6 +11,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
   setCurrentSection,
   currentSection,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <nav className="navbar navbar-light bg-white">
       <div className="container">
@@ -36,7 +39,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
                 }`}
                 onClick={() => setCurrentSection(section)}
               >
-                {section.toUpperCase()}
+                {t(`navbar.${section}`).toUpperCase()}
               </a>
             ))}
           </div>

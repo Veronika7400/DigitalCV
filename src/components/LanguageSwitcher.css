@@ -1,0 +1,43 @@
+.language-switcher {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.lang-btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    top: 5px;
+    left: 5px;
+  }
+
+  .lang-btn {
+    font-size: 12px;
+  }
+
+  .flag-icon {
+    width: 28px;
+    height: 18px;
+  }
+}

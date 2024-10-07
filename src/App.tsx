@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -36,6 +37,7 @@ const App: React.FC = () => {
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
       />
+      <LanguageSwitcher />
       {renderSection()}
     </>
   );

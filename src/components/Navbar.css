@@ -52,4 +52,7 @@
   .nav-link {
     margin: 0rem 0;
   }
+  .navbar {
+    padding-top: 1.5rem !important;
+  }
 }

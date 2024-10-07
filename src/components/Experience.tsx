@@ -1,61 +1,59 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Experience.css";
 
 const Experience: React.FC = () => {
+  const { t } = useTranslation();
+
   const professionalExperience = [
     {
-      title: "Student Developer",
+      title: t("experience.studentDeveloper"),
       company: "mStart Plus d.o.o.",
-      period: "03/2024 - Present",
-      location: "Zagreb, Croatia",
-      description:
-        "Working as a developer with various programming languages and technologies including C#, React, HTML, CSS, and JavaScript",
+      period: t("experience.currentPeriod"),
+      location: t("location.zagreb"),
+      description: t("experience.studentDeveloperDescription"),
       icon: "/images/laptopIcon.png",
     },
   ];
-
   const seasonalWork = [
     {
-      title: "Cashier",
+      title: t("experience.cashier"),
       company: "Studenac d.o.o.",
       period: "07/2022 – 09/2022",
-      location: "Pag, Croatia",
-      description: "Worked as a cashier, stocked shelves, received goods",
+      location: t("location.pag"),
+      description: t("experience.cashierDescription"),
       icon: "/images/shopIcon.png",
     },
     {
-      title: "Cashier",
+      title: t("experience.cashier"),
       company: "Jadranka Trgovina",
       period: "07/2021 – 09/2021",
-      location: "Mali Lošinj, Croatia",
-      description: "Worked as a cashier and stocked shelves",
+      location: t("location.maliLosinj"),
+      description: t("experience.cashierDescription"),
       icon: "/images/cashIcon.png",
     },
     {
-      title: "Waitress",
+      title: t("experience.waitress"),
       company: "Caffe Bar Punta",
       period: "07/2020 – 09/2020",
-      location: "Umag, Croatia",
-      description:
-        "Served at the bar and prepared food in the fast food section",
+      location: t("location.umag"),
+      description: t("experience.waitressDescription"),
       icon: "/images/caffeeIcon.png",
     },
     {
-      title: "Laundry Worker",
+      title: t("experience.laundryWorker"),
       company: "Plava Laguna",
       period: "07/2019 – 09/2019",
-      location: "Umag, Croatia",
-      description:
-        "Worked in the operational part of the laundry and handled administrative tasks related to its operations",
+      location: t("location.umag"),
+      description: t("experience.laundryWorkerDescription"),
       icon: "/images/documentationIcon.png",
     },
     {
-      title: "Laundry Worker",
+      title: t("experience.laundryWorker"),
       company: "Plava Laguna",
       period: "07/2018 – 09/2018",
-      location: "Umag, Croatia",
-      description:
-        "Worked in the operational part of the laundry and handled administrative tasks related to its operations",
+      location: t("location.umag"),
+      description: t("experience.laundryWorkerDescription"),
       icon: "/images/loundryIcon.png",
     },
   ];
@@ -63,7 +61,9 @@ const Experience: React.FC = () => {
   return (
     <section className="container my-5">
       <div className="timeline-modern mb-4 p-4">
-        <h3 className="section-title mb-4">PROFESSIONAL EXPERIENCE</h3>
+        <h3 className="section-title mb-4">
+          {t("experience.professionalExperience")}
+        </h3>
         {professionalExperience.map((exp, index) => (
           <div key={index} className="timeline-item mb-4">
             <div className="timeline-content d-flex align-items-center">
@@ -88,7 +88,7 @@ const Experience: React.FC = () => {
       </div>
 
       <div className="timeline-modern mb-4 p-4">
-        <h3 className="section-title mb-4">SEASONAL WORK</h3>
+        <h3 className="section-title mb-4">{t("experience.seasonalWork")}</h3>
         {seasonalWork.map((exp, index) => (
           <div key={index} className="mb-4">
             <div className="timeline-content d-flex align-items-center">
@@ -101,7 +101,7 @@ const Experience: React.FC = () => {
                 />
               </div>
               <div>
-                <h5 className="text-left ">{exp.title}</h5>
+                <h5 className="text-left">{exp.title}</h5>
                 <i>
                   {exp.company} | {exp.location} | {exp.period}
                 </i>

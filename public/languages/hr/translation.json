@@ -1,0 +1,188 @@
+{
+    "navbar": {
+      "about": "O meni",
+      "education": "Obrazovanje",
+      "skills": "Vještine",
+      "projects": "Projekti",
+      "experience": "Iskustvo",
+      "contact": "Kontakt"
+    },
+
+    "about": {
+      "intro": {
+        "title": "Bok!",
+        "name": "Ja sam Veronika",
+        "subtitle": "Junior Software Developer",
+    "description": "Kao magistra informatike, primjenjujem tehnologiju za rješavanje izazova iz stvarnog svijeta oslanjajući se na praktično iskustvo stečeno kao student programer u mStart poduzeću gdje sam se fokusirala na inovacije i kontinuirano poboljšanje. Tijekom studija imala sam priliku raditi na brojnim timskim projektima gdje sam razvila snažne vještine komunikacije, suradnje i prilagodljivosti, produbljujući svoje razumijevanje životnog ciklusa razvoja softvera i nadahnjujući svoju predanost kontinuiranom rastu."   },
+      "logos": {
+        "title": "ZAPOSLENJE I SURADNJA"
+      },
+      "cv": {
+        "title": "PRISTUP ŽIVOTOPISU",
+        "download": "Preuzmi CV",
+        "view": "Pogledaj CV"
+      }
+    },
+
+    "education": {
+      "title": "OBRAZOVANJE",
+      "universityMaster": {
+        "title": "Sveučilišni magistar informatike",
+        "institution": "Sveučilište u Zagrebu, Fakultet organizacije i informatike, Varaždin | 2022 - 2024",
+        "orientation": "Usmjerenje: Informacijsko i programsko inženjerstvo"
+      },
+      "universityBachelor": {
+        "title": "Sveučilišni prvostupnik informatike",
+        "institution": "Sveučilište u Zagrebu, Fakultet organizacije i informatike, Varaždin | 2019 - 2022",
+        "orientation": "Usmjerenje: Informacijski sustavi"
+      },
+      "highSchool": {
+        "title": "Srednja škola",
+        "institution": "Gimnazija Požega | 2015 - 2019",
+        "orientation": "Usmjerenje: Prirodoslovno-matematička gimnazija"
+      }
+    },
+
+    "certificates": {
+      "title": "CERTIFIKATI",
+      "elementsOfAI": {
+        "title": "Elements of AI",
+        "description": "Elementi umjetne inteligencije je online tečaj koji su kreirali MinnaLearn i Sveučilište u Helsinkiju"
+      }
+    },
+
+    "skills": {
+      "digitalSkills": "DIGITALNE VJEŠTINE",
+      "programmingLanguages": {
+        "title": "Programski jezici"
+      },
+      "platformsAndTools": {
+        "title": "Platforme i alati"
+      },
+      "languageSkills": {
+        "title": "JEZIČNE VJEŠTINE",
+        "nativeLanguage": {
+          "title": "Materinji jezik",
+          "name": "Hrvatski"
+        },
+        "otherLanguages": {
+          "title": "Ostali jezici",
+          "name": "Engleski",
+          "understanding": "Razumijevanje",
+          "speaking": "Govor",
+          "writing": "Pisanje"
+        }
+      }
+    },
+
+    "experience": {
+      "professionalExperience": "PROFESIONALNO ISKUSTVO",
+      "seasonalWork": "SEZONSKI RAD",
+      "studentDeveloper": "Student Developer",
+      "studentDeveloperDescription": "Rad kao developer u raznim programskim jezicima i tehnologijama uključujući C#, React, HTML, CSS i JavaScript",
+      "currentPeriod": "03/2024 - Trenutno",
+      "cashier": "Blagajnik",
+      "cashierDescription": "Rad na blagajni, punjenje polica, prijem robe",
+      "waitress": "Konobarica",
+      "waitressDescription": "Posluga u baru i priprema hrane u fast food dijelu poduzeća",
+      "laundryWorker": "Radnik u praonici rublja",
+      "laundryWorkerDescription": "Rad u operativnom dijelu praonice i obavljanje administrativnih zadataka povezanih s njenim radom"
+    },
+
+    "location": {
+      "zagreb": "Zagreb, Hrvatska",
+      "pag": "Pag, Hrvatska",
+      "maliLosinj": "Mali Lošinj, Hrvatska",
+      "umag": "Umag, Hrvatska"
+    }, 
+
+    "contact": {
+      "title": "KONTAKT INFORMACIJE",
+      "address": "Adresa",
+      "phone": "Telefon",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+
+    "sendEmail": {
+      "title": "POŠALJITE MI PORUKU",
+      "nameLabel": "Vaše Ime",
+      "emailLabel": "Vaš Email",
+      "messageLabel": "Poruka",
+      "sendButton": "Pošalji"
+    },
+
+    "locationOnMap": {
+      "title": " LOKACIJA NA KARTI"
+    },
+
+    "projects": {
+      "api": "API",
+      "vendingMachineApi": {
+        "name": "Vending machine API",
+        "description": "Sustav za prodajne automate rezultat je timskog rada i suradnje s tvrtkom SICK Mobilisis, dok je priloženi kod za API rezultat samostalnog rada. Primarna svrha programskog sučelja je pružiti uslugu za komunikaciju između različitih dijelova softvera, posebno za interakciju između baze podataka, aplikacije, korisničkog sučelja i MQTT-a. Primijenjen je code-first pristup gdje se migracije koriste za kreiranje baze podataka na temelju definiranog modela. Programski kod popraćen je dokumentacijom u PDF formatu."  },
+      "crawlerApi": {
+        "name": "Crawler API",
+        "description": "Ovaj projekt razvijen je u suradnji s tvrtkom mStart Plus. API sadrži poslovnu logiku za upravljanje korisnicima aplikacije, logiku za dohvaćanje prve slike svakog proizvoda te može dohvatiti najjeftiniji proizvod iz svake trgovine, kao i sve proizvode dostupne u određenoj trgovini. Code-first pristup korišten je za kreiranje baze podataka što omogućuje fleksibilnost u razvoju sheme baze podataka kako aplikacija raste."  },
+      "webProgramming": "WEB PROGRAMIRANJE",
+      "runningRaceManagement": {
+        "name": "Sustav za utrke trčanja",
+        "description": {
+          "intro": "Sustav je osmišljen za upravljanje utrkama trčanja i praćenje rezultata, s funkcionalnostima za različite korisničke uloge:",
+          "unregisteredUsers": "Neregistrirani korisnici: Pristup osnovnim informacijama, ljestvicama i fotogaleriji",
+          "registeredUsers": "Registrirani korisnici: Registracija i odjava s utrka te pregled svoje osobne statistike",
+          "moderators": "Moderatori: Kreiranje i definiranje faze utrke, popis registriranih korisnika i upravljajte rezultatima",
+          "administrators": "Administratori: Otključavanje i blokirajte korisničkih računa, kreiranje država i utrka te dodijela moderatora"
+        }
+      },
+      "airportInformationSystem": {
+        "name": "Informacijski sustav zračne luke",
+        "description": {
+          "intro": "Sustav se sastoji od pet aplikacija koje pružaju informacije o zračnim lukama, udaljenostima, letovima i vremenskim podacima:",
+          "app1": "1. aplikacija: Socket server za mrežnu komunikaciju",
+          "app2": "2. aplikacija: RESTful/JAX-RS web usluga",
+          "app3": "3. aplikacija: Dohvaća podatke o odlascima letova iz OpenSky Network koristeći višedretvenost",
+          "app4": "4. aplikacija: JAX-WS web usluga",
+          "app5": "5. aplikacija: Poglede za upravljanje: korisnicima, primljenim JMS porukama, zračnim lukama, letovima"
+        }
+      },
+      "crawlerUI": {
+        "name": "Crawler UI",
+        "description": "Korisničko sučelje izgrađeno je pomoću Bootstrapa za responzivnost, ASP.NET Core Identity za upravljanje korisnicima aplikacije i Hangfire za slanje e-pošte pretplatnicima aplikacije. Crawler API koristi se za prikaz osnovnih funkcionalnosti aplikacije koje uključuju upravljanje korisnicima, pretraživanje trgovina za pronalaženje najniže cijene određenog proizvoda i prikaz svih proizvoda iz odabrane online trgovine."
+      },
+      "designPatterns": "UZORCI DIZAJNA",
+    "packageDeliverySystem": {
+      "name": "Sustav dostave paketa",
+      "description": "Implementacija ponovo upotrebljivih softverskih arhitektura definiranih u GOF knjizi o inženjerstvu softvera primijenjena je u ovom projektu. Aplikacija je dizajnirana za naredbeni terminal, olakšavajući dostavu raznih tipova paketa s određenim uslugama dostave."
+    },
+    "predictiveAnalytics": "PREDIKTIVNA ANALITIKA",
+    "predictiveAnalyticsInBusiness": {
+      "name": "Prediktivna analitika u poslovanju",
+      "description": "Ovaj projekt ilustrira, kroz praktičan primjer, kako se modeli stabla odlučivanja i neuronske mreže mogu primijeniti u poslovanju i rezultate koje mogu dati. Analizira skup podataka za IBM u Hrvatskoj i razvija modele za predikciju odlaska zaposlenika. Online platforma za strojno učenje BigML koristi se za izradu ovih prediktivnih modela."
+    },
+    "lowCodeDevelopment": "LOW-CODE RAZVOJ SOFTVERA",
+    "vuesticVueAdminTemplate": {
+      "name": "Vuestic - Vue Admin Template",
+      "description": "Fokus ovog projekta je na low-code razvoju softvera kao disciplini automatiziranog programiranja koja omogućuje izradu aplikacija bez opsežnog kodiranja. Kako postaje sve popularniji zbog svoje sposobnosti da ubrza razvoj i smanji troškove, ovaj projekt demonstrira proces razvoja aplikacija koristeći generirani UI predložak s Flatlogic platforme. Predložak je prilagođen za integraciju s Crawler API backendom, uključujući funkcionalnosti za upravljanje korisnicima i prikazivanje najjeftinijih proizvoda iz online trgovina."
+    },
+    "cryptography": "KRIPTOGRAFIJA",
+    "cryptographyToolkit": {
+      "name": "Alat za kriptografiju",
+      "description": "Program omogućuje stvaranje i pohranu kriptografskih ključeva u datotekama, enkripciju i dekripciju zadane datoteke koristeći RSA i AES algoritme, izračun poruke (ulazne datoteke), digitalno potpisivanje i verifikaciju digitalnog potpisa."
+    },
+    "computerGraphics": "RAČUNALNA GRAFIKA",
+    "graphicsFundamentals": {
+      "name": "Osnove 2D i 3D grafike",
+      "description": "Razumijevanje principa koji leže u temelju implementacije 2D i 3D grafike na računalu. Implementacija se temelji na matematičkim konceptima, što dovodi do rješenja za koordinatne sustave, transformacije, perspektivnu projekciju i geometrijsko modeliranje."
+    },
+    "databases": "BAZE PODATAKA",
+    "databaseDevelopmentDrivingSchool": {
+      "name": "Baza podataka za autoškolu",
+      "description": "Ovaj projekt uključuje razvoj sveobuhvatne baze podataka za autoškolu, fokusirajući se na bitne elemente potrebne za učinkovito upravljanje i rad. Naglasak je na stvaranju okidača i upita koji poboljšavaju funkcionalnost baze podataka, osiguravajući da ona učinkovito rješava različite aspekte poslovanja autoškole."
+    },
+    "accessResources": "Pristup resursima",
+    "details": "Detalji"
+  }
+  }
+  

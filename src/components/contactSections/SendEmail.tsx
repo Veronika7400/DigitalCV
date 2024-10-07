@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const SendEmail: React.FC = () => {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -8,7 +11,7 @@ const SendEmail: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:veronika.tvrdy@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:veronika.tvrdy@gmail.com?subject=Poruka od ${name}&body=${encodeURIComponent(
       message
     )}`;
 
@@ -22,12 +25,14 @@ const SendEmail: React.FC = () => {
   return (
     <section className="container my-5">
       <div className="timeline-modern mb-4 p-4">
-        <h3 className="experience-title text-center mb-4">SEND ME A MESSAGE</h3>
+        <h3 className="experience-title text-center mb-4">
+          {t("sendEmail.title")}
+        </h3>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
-              Your Name
+              {t("sendEmail.nameLabel")}
             </label>
             <input
               type="text"
@@ -40,7 +45,7 @@ const SendEmail: React.FC = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
-              Your Email
+              {t("sendEmail.emailLabel")}
             </label>
             <input
               type="email"
@@ -53,7 +58,7 @@ const SendEmail: React.FC = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="message" className="form-label">
-              Message
+              {t("sendEmail.messageLabel")}
             </label>
             <textarea
               className="form-control"
@@ -65,7 +70,7 @@ const SendEmail: React.FC = () => {
             ></textarea>
           </div>
           <button type="submit" className="btn text-center">
-            Send
+            {t("sendEmail.sendButton")}
           </button>
         </form>
       </div>

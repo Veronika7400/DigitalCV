@@ -1,32 +1,31 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const EducationSection: React.FC = () => {
+  const { t } = useTranslation();
+
   const educationData = [
     {
-      title: "University Master of Informatics",
-      institution:
-        "University of Zagreb Faculty of Organization and Informatics, Varaždin | 2022 - 2024",
-      orientation:
-        "Programme orientation: Information and Software Engineering",
+      title: t("education.universityMaster.title"),
+      institution: t("education.universityMaster.institution"),
+      orientation: t("education.universityMaster.orientation"),
     },
     {
-      title: "University Bachelor of Informatics",
-      institution:
-        "University of Zagreb Faculty of Organization and Informatics, Varaždin | 2019 - 2022",
-      orientation: "Programme orientation: Information systems",
+      title: t("education.universityBachelor.title"),
+      institution: t("education.universityBachelor.institution"),
+      orientation: t("education.universityBachelor.orientation"),
     },
     {
-      title: "High School Diploma",
-      institution: "Gymnasium Požega | 2015 - 2019",
-      orientation:
-        "Programme orientation: Natural sciences and mathematics high school",
+      title: t("education.highSchool.title"),
+      institution: t("education.highSchool.institution"),
+      orientation: t("education.highSchool.orientation"),
     },
   ];
 
   return (
     <section className="container my-5">
       <div className="timeline-modern">
-        <h2 className="education-title  text-center">EDUCATION</h2>
+        <h2 className="education-title text-center">{t("education.title")}</h2>
         {educationData.map((item, index) => (
           <div key={index} className="timeline-modern-item">
             <div className="timeline-content">

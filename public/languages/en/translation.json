@@ -1,0 +1,185 @@
+{
+    "navbar": {
+      "about": "About",
+      "education": "Education",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    },
+
+    "about": {
+      "intro": {
+        "title": "Hi!",
+        "name": "I'm Veronika",
+        "subtitle": "Junior Software Developer",
+        "description": "As a Master's graduate in Informatics, I apply technology to solve real-world challenges, drawing on hands-on experience as a student developer at mStart where I focused on innovation and continuous improvement. Throughout my studies, I had the opportunity to work on numerous team projects where I developed strong communication, collaboration and adaptability skills while deepening my understanding of the software development lifecycle and inspiring my commitment to continuous growth."
+      },
+      "logos": {
+        "title": "EMPLOYMENT AND COLLABORATION"
+      },
+      "cv": {
+        "title": "CV ACCESS",
+        "download": "Download CV",
+        "view": "View CV"
+      }
+    },
+
+    "education": {
+      "title": "EDUCATION",
+      "universityMaster": {
+        "title": "University Master of Informatics",
+        "institution": "University of Zagreb Faculty of Organization and Informatics, Varaždin | 2022 - 2024",
+        "orientation": "Programme orientation: Information and Software Engineering"
+      },
+      "universityBachelor": {
+        "title": "University Bachelor of Informatics",
+        "institution": "University of Zagreb Faculty of Organization and Informatics, Varaždin | 2019 - 2022",
+        "orientation": "Programme orientation: Information systems"
+      },
+      "highSchool": {
+        "title": "High School Diploma",
+        "institution": "Gymnasium Požega | 2015 - 2019",
+        "orientation": "Programme orientation: Natural sciences and mathematics high school"
+      }
+    },
+    "certificates": {
+      "title": "CERTIFICATES",
+      "elementsOfAI": {
+        "title": "Elements of AI",
+        "description": "The Elements of AI is an online course created by MinnaLearn and the University of Helsinki"
+      }
+    },
+    "skills": {
+      "digitalSkills": "DIGITAL SKILLS",
+      "programmingLanguages": {
+        "title": "Programming Languages"
+      },
+      "platformsAndTools": {
+        "title": "Platforms and Tools"
+      },
+      "languageSkills": {
+        "title": "LANGUAGE SKILLS",
+        "nativeLanguage": {
+          "title": "Native Language",
+          "name": "Croatian"
+        },
+        "otherLanguages": {
+          "title": "Other Languages",
+          "name": "English",
+          "understanding": "Understanding",
+          "speaking": "Speaking",
+          "writing": "Writing"
+        }
+      }
+    },
+    "experience": {
+    "professionalExperience": "PROFESSIONAL EXPERIENCE",
+    "seasonalWork": "SEASONAL WORK",
+    "studentDeveloper": "Student Developer",
+    "studentDeveloperDescription": "Working as a developer with various programming languages and technologies including C#, React, HTML, CSS, and JavaScript",
+    "currentPeriod": "03/2024 - Present",
+    "cashier": "Cashier",
+    "cashierDescription": "Worked as a cashier, stocked shelves, received goods",
+    "waitress": "Waitress",
+    "waitressDescription": "Served at the bar and prepared food in the fast food section",
+    "laundryWorker": "Laundry Worker",
+    "laundryWorkerDescription": "Worked in the operational part of the laundry and handled administrative tasks related to its operations"
+  },
+  "location": {
+    "zagreb": "Zagreb, Croatia",
+    "pag": "Pag, Croatia",
+    "maliLosinj": "Mali Lošinj, Croatia",
+    "umag": "Umag, Croatia"
+  },
+  "contact": {
+    "title": "CONTACT INFORMATION",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "sendEmail": {
+    "title": "SEND ME A MESSAGE",
+    "nameLabel": "Your Name",
+    "emailLabel": "Your Email",
+    "messageLabel": "Message",
+    "sendButton": "Send"
+  },
+
+  "locationOnMap": {
+    "title": " LOCATION ON THE MAP"
+  },
+
+  "projects": {
+    "api": "API",
+    "vendingMachineApi": {
+      "name": "Vending machine API",
+      "description": "The entire vending machine system is the result of teamwork and collaboration with the company SICK Mobilisis, while the attached code for the API was written independently. The primary purpose of the application programming interface is to provide a service for communication between different parts of the software, specifically for the interaction between the database, application, user interface, and MQTT. A code-first approach is applied, where migrations are used to create the database based on the defined model. The program code is accompanied by documentation included in a PDF document."
+    },
+    "crawlerApi": {
+      "name": "Crawler API",
+      "description": "This project was developed in collaboration with the company mStart Plus. The API contains the business logic for managing application users, logic for retrieving the first image of each product, and can fetch the lowest-priced product from each store, as well as all products available in a specific store. A code-first approach was used for creating the database allowing for flexibility in the development of the database schema as the application grows."
+    },
+    "webProgramming": "WEB PROGRAMMING",
+    "runningRaceManagement": {
+      "name": "Running race management system",
+      "description": {
+        "intro": "The system is designed for managing running races and tracking results, featuring functionalities for different user roles:",
+        "unregisteredUsers": "Unregistered users: Access basic information, leaderboards, and a photo gallery",
+        "registeredUsers": "Registered users: Register and deregister for races, and view their personal statistics",
+        "moderators": "Moderators: Create and define race stages, list registered users, and manage results",
+        "administrators": "Administrators: Unlock and block user accounts, create countries and races, and assign moderators"
+      }
+    },
+    "airportInformationSystem": {
+      "name": "Airport information system",
+      "description": {
+        "intro": "The system consists of five applications that provide information about airports, distances, flights, and weather data:",
+        "app1": "1st application: A socket server for network communication",
+        "app2": "2nd application: A RESTful/JAX-RS web service",
+        "app3": "3rd application: Retrieves flight departure data from the OpenSky Network using multithreading",
+        "app4": "4th application: A JAX-WS web service",
+        "app5": "5th application: Views for managing: users, received JMS messages, airports, flights"
+      }
+    },
+    "crawlerUI": {
+      "name": "Crawler UI",
+      "description": "The user interface was built using Bootstrap for responsiveness, ASP.NET Core Identity for managing application users and Hangfire for sending emails to application subscribers. The Crawler API is used to display the core functionalities of the application which include managing users, searching stores to find the lowest price for a specific product and displaying all products from a selected online store."
+    },
+    "designPatterns": "DESIGN PATTERNS",
+    "packageDeliverySystem": {
+      "name": "Package Delivery System",
+      "description": "The implementation of reusable software architectures defined in the GOF book on software engineering has been applied in this project. The application is designed for a command-line terminal, facilitating the delivery of various types of packages with specific delivery services."
+    },
+    "predictiveAnalytics": "PREDICTIVE ANALYTICS",
+    "predictiveAnalyticsInBusiness": {
+      "name": "Predictive Analytics in Business",
+      "description": "This project illustrates, through a practical example, how decision tree models and neural networks can be applied in business and the results they can yield. It analyzes a dataset for IBM in Croatia and develops models to predict employee turnover. The online machine learning platform BigML is used to create these predictive models."
+    },
+    "lowCodeDevelopment": "LOW CODE DEVELOPMENT",
+    "vuesticVueAdminTemplate": {
+      "name": "Vuestic - Vue Admin Template",
+      "description": "The focus of this project is on low-code software development as a discipline of automated programming that enables the creation of applications without extensive coding. As it becomes increasingly popular for its ability to accelerate development and reduce costs, this project demonstrates the application development process using a generated UI template from the Flatlogic platform. The template is customized to integrate with the Crawler API backend, incorporating functionalities for user management and displaying the lowest-priced products from online stores."
+    },
+    "cryptography": "CRYPTOGRAPHY",
+    "cryptographyToolkit": {
+      "name": "Cryptography Toolkit",
+      "description": "The program enables the creation and storage of cryptographic keys in files, encryption and decryption of a given file using RSA and AES algorithms, message digest calculation (of the input file), digital signing and verification of the digital signature."
+    },
+    "computerGraphics": "COMPUTER GRAPHICS",
+    "graphicsFundamentals": {
+      "name": "2D and 3D Graphics Fundamentals",
+      "description": "Understanding the principles underlying the implementation of 2D and 3D graphics on a computer. The implementation is based on mathematical concepts, leading to solutions for coordinate systems, transformations, perspective projection, and geometric modeling."
+    },
+    "databases": "DATABASES",
+    "databaseDevelopmentDrivingSchool": {
+      "name": "Database Development for a Driving School",
+      "description": "This project involves the development of a comprehensive database for a driving school, focusing on the essential elements required for efficient management and operation. Emphasis is placed on creating triggers and queries that enhance the functionality of the database, ensuring that it effectively handles various aspects of the driving school's operations."
+    },
+    "accessResources": "Access resources",
+    "details": "Details"
+  }
+  }
+  

@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Projects.css";
 
 interface Project {
@@ -13,21 +14,21 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
+  const { t } = useTranslation();
+
   const projectCategories: { title: string; projects: Project[] }[] = [
     {
-      title: "API",
+      title: t("projects.api"),
       projects: [
         {
-          name: "Vending machine API",
-          description:
-            "The entire vending machine system is the result of teamwork and collaboration with the company SICK Mobilisis, while the attached code for the API was written independently. The primary purpose of the application programming interface is to provide a service for communication between different parts of the software, specifically for the interaction between the database, application, user interface, and MQTT. A code-first approach is applied, where migrations are used to create the database based on the defined model. The program code is accompanied by documentation included in a PDF document.",
+          name: t("projects.vendingMachineApi.name"),
+          description: t("projects.vendingMachineApi.description"),
           technologies: ["SICK Mobilisis | .NET", "C#", "MS Sql"],
           link: "https://github.com/Veronika7400/Vending-machine-API",
         },
         {
-          name: "Crawler API",
-          description:
-            "This project was developed in collaboration with the company mStart Plus. The API contains the business logic for managing application users, logic for retrieving the first image of each product, and can fetch the lowest-priced product from each store, as well as all products available in a specific store. A code-first approach was used for creating the database allowing for flexibility in the development of the database schema as the application grows.",
+          name: t("projects.crawlerApi.name"),
+          description: t("projects.crawlerApi.description"),
           technologies: [
             "mStart plus d.o.o. | .NET Core Web API",
             "C#",
@@ -41,32 +42,31 @@ const Projects: React.FC = () => {
       ],
     },
     {
-      title: "WEB PROGRAMMING",
+      title: t("projects.webProgramming"),
       projects: [
         {
-          name: "Running race management system",
+          name: t("projects.runningRaceManagement.name"),
           description: (
             <>
-              <p>
-                The system is designed for managing running races and tracking
-                results, featuring functionalities for different user roles:
-              </p>
+              <p>{t("projects.runningRaceManagement.description.intro")}</p>
               <ul>
                 <li>
-                  Unregistered users: Access basic information, leaderboards,
-                  and a photo gallery
+                  {t(
+                    "projects.runningRaceManagement.description.unregisteredUsers"
+                  )}
                 </li>
                 <li>
-                  Registered users: Register and deregister for races, and view
-                  their personal statistics
+                  {t(
+                    "projects.runningRaceManagement.description.registeredUsers"
+                  )}
                 </li>
                 <li>
-                  Moderators: Create and define race stages, list registered
-                  users, and manage results
+                  {t("projects.runningRaceManagement.description.moderators")}
                 </li>
                 <li>
-                  Administrators: Unlock and block user accounts, create
-                  countries and races, and assign moderators
+                  {t(
+                    "projects.runningRaceManagement.description.administrators"
+                  )}
                 </li>
               </ul>
             </>
@@ -78,27 +78,25 @@ const Projects: React.FC = () => {
           },
         },
         {
-          name: "Airport information system",
+          name: t("projects.airportInformationSystem.name"),
           description: (
             <>
-              <p>
-                The system consists of five applications that provide
-                information about airports, distances, flights, and weather
-                data:
-              </p>
+              <p>{t("projects.airportInformationSystem.description.intro")}</p>
               <ul>
                 <li>
-                  1st application: A socket server for network communication
+                  {t("projects.airportInformationSystem.description.app1")}
                 </li>
-                <li>2nd application: A RESTful/JAX-RS web service</li>
                 <li>
-                  3rd application: Retrieves flight departure data from the
-                  OpenSky Network using multithreading
+                  {t("projects.airportInformationSystem.description.app2")}
                 </li>
-                <li>4th application: A JAX-WS web service</li>
                 <li>
-                  5th application: Views for managing: users, received JMS
-                  messages, airports, flights
+                  {t("projects.airportInformationSystem.description.app3")}
+                </li>
+                <li>
+                  {t("projects.airportInformationSystem.description.app4")}
+                </li>
+                <li>
+                  {t("projects.airportInformationSystem.description.app5")}
                 </li>
               </ul>
             </>
@@ -107,9 +105,8 @@ const Projects: React.FC = () => {
           link: "https://github.com/Veronika7400/Web-system",
         },
         {
-          name: "Crawler UI",
-          description:
-            "The user interface was built using Bootstrap for responsiveness, ASP.NET Core Identity for managing application users and Hangfire for sending emails to application subscribers. The Crawler API is used to display the core functionalities of the application which include managing users, searching stores to find the lowest price for a specific product and displaying all products from a selected online store.",
+          name: t("projects.crawlerUI.name"),
+          description: t("projects.crawlerUI.description"),
           technologies: ["mStart plus d.o.o. | ASP.NET Core MVC", "C#"],
           link: "https://github.com/Veronika7400/CrawlerMVC",
           media: {
@@ -119,12 +116,11 @@ const Projects: React.FC = () => {
       ],
     },
     {
-      title: "DESIGN PATTERNS",
+      title: t("projects.designPatterns"),
       projects: [
         {
-          name: "Package delivery system",
-          description:
-            "The implementation of reusable software architectures defined in the GOF book on software engineering has been applied in this project. The application is designed for a command-line terminal, facilitating the delivery of various types of packages with specific delivery services.",
+          name: t("projects.packageDeliverySystem.name"),
+          description: t("projects.packageDeliverySystem.description"),
           technologies: ["Java"],
           link: "https://github.com/Veronika7400/Dostava-paketa",
           media: {
@@ -134,24 +130,22 @@ const Projects: React.FC = () => {
       ],
     },
     {
-      title: "PREDICTIVE ANALYTICS",
+      title: t("projects.predictiveAnalytics"),
       projects: [
         {
-          name: "Predictive analytics in business",
-          description:
-            "This project illustrates, through a practical example, how decision tree models and neural networks can be applied in business and the results they can yield. It analyzes a dataset for IBM in Croatia and develops models to predict employee turnover. The online machine learning platform BigML is used to create these predictive models.",
+          name: t("projects.predictiveAnalyticsInBusiness.name"),
+          description: t("projects.predictiveAnalyticsInBusiness.description"),
           technologies: ["BigML", "Kaggle"],
           link: "https://www.dropbox.com/scl/fi/7kq1yxv7ft4wjrygicz2o/Tvrdy_Veronika-Prediktivna-analitika-u-poslovanju.pdf?rlkey=6siggpshdkf3m54g0i9803b7w&st=ezoa4lxi&dl=0",
         },
       ],
     },
     {
-      title: "LOW CODE DEVELOPMENT",
+      title: t("projects.lowCodeDevelopment"),
       projects: [
         {
-          name: "Vuestic - Vue Admin Template",
-          description:
-            "The focus of this project is on low-code software development as a discipline of automated programming that enables the creation of applications without extensive coding. As it becomes increasingly popular for its ability to accelerate development and reduce costs, this project demonstrates the application development process using a generated UI template from the Flatlogic platform. The template is customized to integrate with the Crawler API backend, incorporating functionalities for user management and displaying the lowest-priced products from online stores.",
+          name: t("projects.vuesticVueAdminTemplate.name"),
+          description: t("projects.vuesticVueAdminTemplate.description"),
           technologies: ["mStart plus d.o.o. | Vue.js"],
           link: "https://www.dropbox.com/scl/fi/zvhsn9k0g8o174v6oal4r/Generatori-aplikacija.pdf?rlkey=545lb0r1q8ptce9a9xc2wsary&st=yrby18ym&dl=0",
           media: {
@@ -161,24 +155,22 @@ const Projects: React.FC = () => {
       ],
     },
     {
-      title: "CRYPTOGRAPHY",
+      title: t("projects.cryptography"),
       projects: [
         {
-          name: "Cryptography toolkit",
-          description:
-            "The program enables the creation and storage of cryptographic keys in files, encryption and decryption of a given file using RSA and AES algorithms, message digest calculation (of the input file), digital signing and verification of the digital signature.",
+          name: t("projects.cryptographyToolkit.name"),
+          description: t("projects.cryptographyToolkit.description"),
           technologies: ["C#", "Windows Forms"],
           link: "https://github.com/Veronika7400/Encryption",
         },
       ],
     },
     {
-      title: "COMPUTER GRAPHICS",
+      title: t("projects.computerGraphics"),
       projects: [
         {
-          name: "2D and 3D graphics fundamentals",
-          description:
-            "Understanding the principles underlying the implementation of 2D and 3D graphics on a computer. The implementation is based on mathematical concepts, leading to solutions for coordinate systems, transformations, perspective projection, and geometric modeling.",
+          name: t("projects.graphicsFundamentals.name"),
+          description: t("projects.graphicsFundamentals.description"),
           technologies: ["JavaScript"],
           link: "https://github.com/Veronika7400/Racunalna-grafika",
           media: {
@@ -189,12 +181,13 @@ const Projects: React.FC = () => {
       ],
     },
     {
-      title: "DATABASES",
+      title: t("projects.databases"),
       projects: [
         {
-          name: "Database development for a driving school",
-          description:
-            "This project involves the development of a comprehensive database for a driving school, focusing on the essential elements required for efficient management and operation. Emphasis is placed on creating triggers and queries that enhance the functionality of the database, ensuring that it effectively handles various aspects of the driving school's operations. ",
+          name: t("projects.databaseDevelopmentDrivingSchool.name"),
+          description: t(
+            "projects.databaseDevelopmentDrivingSchool.description"
+          ),
           technologies: ["MS SQL", "C#", "Windows Forms"],
           link: "https://www.dropbox.com/scl/fi/gde2qjr9i3ej4emyi7cnb/Veronika_Tvrdy-Baza_podataka_za_auto-kolu.pdf?rlkey=2anpgpi4tk18r3h14dj4jl0qb&dl=0",
         },
@@ -260,13 +253,13 @@ const Projects: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Access resources
+                      {t("projects.accessResources")}
                     </a>
                     <button
                       className="btn ms-2"
                       onClick={() => handleDetailsClick(project)}
                     >
-                      Details
+                      {t("projects.details")}
                     </button>
                   </li>
                 </div>
@@ -294,7 +287,7 @@ const Projects: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Access resources
+              {t("projects.accessResources")}
             </a>
           </div>
         </section>
